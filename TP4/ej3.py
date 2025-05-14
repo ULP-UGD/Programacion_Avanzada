@@ -67,6 +67,8 @@ def crea_directorio(archivo):
         return f"Error al crear el fichero {archivo}: {e}"
 ##################################################################################################
 ##################################################################################################
+
+
 def busca_contacto(archivo, cliente):
     try:
         with open(archivo, 'r') as f:
@@ -81,6 +83,8 @@ def busca_contacto(archivo, cliente):
         return f"Error al buscar el contacto: {e}"
 ##################################################################################################
 ##################################################################################################
+
+
 def agrega_contacto(archivo, cliente, telf):
     try:
         with open(archivo, 'r') as f:
@@ -88,7 +92,7 @@ def agrega_contacto(archivo, cliente, telf):
                 nombre, _ = linea.strip().split(',')
                 if nombre.strip().lower() == cliente.strip().lower():
                     return f"El cliente {cliente} ya existe en el fichero."
-        
+
         with open(archivo, 'a') as f:
             f.write(f"{cliente.strip()},{telf.strip()}\n")
         return f"Contacto {cliente} con teléfono {telf} añadido correctamente."
@@ -98,11 +102,13 @@ def agrega_contacto(archivo, cliente, telf):
         return f"Error al añadir el contacto: {e}"
 ##################################################################################################
 ##################################################################################################
+
+
 def elimina_contacto(archivo, cliente):
     try:
         with open(archivo, 'r') as f:
             lineas = f.readlines()
-        
+
         encontrado = False
         nuevas_lineas = []
         for linea in lineas:
@@ -111,10 +117,10 @@ def elimina_contacto(archivo, cliente):
                 nuevas_lineas.append(linea)
             else:
                 encontrado = True
-        
+
         if not encontrado:
             return f"No se encontró el cliente {cliente} en el fichero."
-        
+
         with open(archivo, 'w') as f:
             f.writelines(nuevas_lineas)
         return f"Contacto {cliente} eliminado correctamente."
@@ -124,6 +130,8 @@ def elimina_contacto(archivo, cliente):
         return f"Error al eliminar el contacto: {e}"
 ##################################################################################################
 ##################################################################################################
+
+
 def menu():
     print("\n=== Agenda Telefónica ===")
     print("1. Crear fichero de agenda")
@@ -135,12 +143,14 @@ def menu():
     return opcion
 ##################################################################################################
 ##################################################################################################
+
+
 def principal():
     archivo = "TP4/agenda.txt"  # Ruta relativa al fichero en TP4
-    
+
     while True:
         opcion = menu()
-        
+
         match opcion:
             case '1':
                 print(crea_directorio(archivo))
@@ -159,6 +169,8 @@ def principal():
                 break
             case _:
                 print("Opción no válida. Por favor, selecciona una opción entre 1 y 5.")
+
+
 ##################################################################################################
 ##################################################################################################
 principal()
