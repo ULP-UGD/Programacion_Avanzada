@@ -1,0 +1,11 @@
+fecha,temperatura_max,temperatura_min,humedad,precipitacion,ciudad
+2025-05-01,25,15,60,2.5,Buenos Aires
+2025-05-02,23,14,65,0.0,Buenos Aires
+2025-05-03,22,13,70,5.1,Buenos Aires
+2025-05-04,24,16,55,0.0,Buenos Aires
+2025-05-05,26,17,50,0.0,Buenos Aires
+2025-05-01,18,10,80,4.2,Córdoba
+2025-05-02,20,11,75,1.5,Córdoba
+2025-05-03,21,12,70,0.0,Córdoba
+2025-05-04,19,11,85,3.3,Córdoba
+2025-05-05,17,9,90,7.0,Córdoba
