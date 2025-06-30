@@ -1,0 +1,9 @@
+edad,fiebre,tos,dolor_cabeza,diagnostico
+25,sí,sí,no,1
+34,no,sí,sí,0
+45,sí,sí,sí,1
+52,sí,no,sí,1
+29,no,no,no,0
+63,sí,sí,sí,1
+38,no,sí,no,0
+47,sí,no,sí,1

@@ -1,0 +1,9 @@
+ingresos,antiguedad_laboral,monto_prestamo,otras_deudas,aprobado
+35000,2,10000,no,1
+50000,5,15000,sí,1
+20000,1,5000,no,0
+80000,10,20000,sí,1
+15000,0,3000,no,0
+40000,3,12000,sí,0
+60000,6,18000,no,1
+25000,1,4000,sí,0
